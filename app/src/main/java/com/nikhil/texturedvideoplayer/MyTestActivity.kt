@@ -1,6 +1,7 @@
 package com.nikhil.texturedvideoplayer
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MyTestActivity : AppCompatActivity() {
@@ -19,6 +20,11 @@ class MyTestActivity : AppCompatActivity() {
             object : CustomTextureView.OnVideoPrepareListener {
                 override fun onVideoPrepared() {
                     customTextureView.playVideo()
+                }
+            }, null, object : CustomTextureView.OnVideoCompleteListener {
+                override fun onVideoComplete() {
+                    Toast.makeText(this@MyTestActivity, "Video Ended!", Toast.LENGTH_SHORT)
+                        .show()
                 }
             })
     }
