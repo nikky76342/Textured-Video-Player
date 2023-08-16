@@ -2,8 +2,8 @@
 Advanced video player with customised controls
 > Step-1: Add below dependencies in your project.
  '''build.gradle (project)
->allprojects {
->		repositories {
+>allprojects {<br />
+>		repositories {<br />
 >			...
 >			maven { url 'https://jitpack.io' }
 >		}
