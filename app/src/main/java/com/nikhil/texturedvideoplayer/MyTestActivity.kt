@@ -21,7 +21,8 @@ class MyTestActivity : AppCompatActivity() {
                 override fun onVideoPrepared() {
                     customTextureView.playVideo()
                 }
-            }, null, object : CustomTextureView.OnVideoCompleteListener {
+            }, null,
+            object : CustomTextureView.OnVideoCompleteListener {
                 override fun onVideoComplete() {
                     Toast.makeText(this@MyTestActivity, "Video Ended!", Toast.LENGTH_SHORT)
                         .show()
