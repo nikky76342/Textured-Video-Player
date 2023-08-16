@@ -2,4 +2,11 @@
 <resources>
 
     <style name="Theme.TexturedVideoPlayer" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="AppTheme.VideoDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:screenOrientation">sensorLandscape</item>
+    </style>
 </resources>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#000">
 
-    <com.nikhil.touchtest2.t1.CustomTextureView
+    <com.nikhil.texturedvideoplayer.CustomTextureView
         android:id="@+id/customVideoView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
